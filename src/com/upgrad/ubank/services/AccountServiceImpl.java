@@ -5,6 +5,7 @@ import com.upgrad.ubank.dtos.Transaction;
 
 
 public class AccountServiceImpl implements AccountService {
+    private final TransactionService transactionService;
     //Account array to store account objects for the application, later in the course
     //this array will be replaced with database
     private Account[] accounts;
